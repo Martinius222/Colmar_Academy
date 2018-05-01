@@ -69,7 +69,7 @@ nav {
 
 .banner-img {
 	width: 60%;
-	margin: 2rem 1.5rem;
+	padding: 2rem 1.5rem;
 }
 
 .banner-img img {
@@ -115,3 +115,106 @@ nav {
 .button h3 {
 	padding: 0.5rem 0;
 }
+
+/*Program Section*/
+
+.information {
+	color: #3F3F3F;
+	font-family: "Lato", sans-serif;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.info-banner {
+	padding: 1rem 1.5rem 1rem 1.5rem;
+	max-width: 60%;
+	min-width: 60%;
+	
+}
+
+.info-banner-img {
+	width: 100%;
+
+}
+
+.info-banner-img img {
+	width: 100%;
+	padding-bottom: 2rem;
+
+}
+
+.info-banner h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 4.1rem;
+	margin-bottom: 1.5rem;
+
+}
+
+.description {
+	font-size: 1.55rem;
+	line-height: 2.3rem;
+	font-weight: 400;
+}
+
+.program-list {
+	width: 40%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#first-section {
+	border-top: 2px solid #D4D4D4;
+}
+
+.prog-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #D4D4D4;
+	border-left: 2px solid #D4D4D4;
+	transition: background-color 400ms;
+	
+}
+
+.prog-section:hover {
+	background-color: #D4D4D4;
+	transition: background-color 350ms;
+}
+
+.prog-section img {
+	width: 35%;
+	padding: 1rem 0 1rem 1rem;
+	margin-right: 2.6rem;
+
+}
+
+.prog-description {
+	width: 65%;
+}
+
+.prog-description p {
+	margin: 8px 0;
+	font-size: 1.32rem;
+	line-height: 2.3rem;
+	font-weight: 400;
+}
+
+.link {
+	color: dodgerblue;
+	font-size: 1.32rem;
+	line-height: 2.3rem;
+	font-weight: 400;
+	text-decoration: none;
+	
+}
+
+.link:hover {
+	font-weight: 700;
+	
+}
+
