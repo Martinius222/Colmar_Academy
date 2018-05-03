@@ -15,6 +15,10 @@ nav {
 	
 }
 
+.nav-mobile {
+	display: none;
+}
+
 .logo {
 	display: flex;
 	justify-content: center;
@@ -54,6 +58,27 @@ nav {
 	font-size: 1.2rem;
 	margin-left: 1rem;
 	text-decoration: none;
+}
+
+/*Navigation Mobile*/
+
+@media only screen and (max-width: 780px) {
+	nav {
+		display: none;	
+	}
+
+	.nav-mobile {
+		height: 4rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.nav-mobile img {
+		height: 3.5rem;
+		width: 3.5rem;
+
+	}
 }
 
 /*Banner Section*/
@@ -140,6 +165,24 @@ nav {
 		margin-bottom: 1.5rem;
 
 	}
+}
+
+@media only screen and (max-width: 780px) {
+
+	.banner-img {
+		width: 100%;
+		padding: 0;
+	}
+
+	.banner-description {
+		margin: 2rem 1rem 2rem 1rem;
+		
+	}
+
+	.button {
+		width: 100%;
+	}
+
 }
 
 /*Program Section*/
