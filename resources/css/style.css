@@ -62,7 +62,7 @@ nav {
 
 /*Navigation Mobile*/
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 980px) {
 	nav {
 		display: none;	
 	}
@@ -167,10 +167,7 @@ nav {
 	}
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 980px) {
 
 	.banner-img {
 		width: 100%;
