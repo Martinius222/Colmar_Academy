@@ -309,6 +309,13 @@ nav {
 	font-weight: 300;
 }
 
+@media only screen and (max-width: 1120px) {
+	.courses-container {
+		margin: 0 1px;
+	}
+
+}
+
 /*Thesis Section*/
 
 .thesis-title {
