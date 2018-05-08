@@ -1,12 +1,13 @@
 
 html {
 	font-size: 16px;
+	font-family: "Lato", sans-serif;
 }
 
 /*Logo and Navigation Section*/
 
 nav {
-	font-family: "Lato", sans-serif;
+	
 	width: 100%;
 	height: 4rem;
 	display: flex;
@@ -179,6 +180,14 @@ nav {
 		
 	}
 
+	.banner-description h1 {
+		margin-bottom: 2rem;
+	}
+
+	.banner-description h2 {
+		margin-bottom: 1.5rem;
+	}
+
 	.button {
 		width: 100%;
 	}
@@ -245,6 +254,10 @@ nav {
 
 }
 
+.program-list-mob {
+	display: none;
+}
+
 #first-section {
 	border-top: 2px solid #D4D4D4;
 }
@@ -259,9 +272,12 @@ nav {
 	
 }
 
-.prog-section:hover {
+@media only screen and (min-width: 980px) {
+
+    .prog-section:hover {
 	background-color: #D4D4D4;
 	transition: background-color 350ms;
+    }
 }
 
 .prog-section img {
@@ -296,7 +312,70 @@ nav {
 	
 }
 
+@media only screen and (max-width: 980px) {
+
+	.program-list {
+		display: none;
+	}
+
+	.information-cont {
+		margin-top: 1rem;
+		padding: 0;
+		flex-direction: column;
+	}
+
+	.program-list-mob {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.info-banner {
+		display: none;
+	}
+
+	.prog-section {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0 1rem 4rem 1rem;
+		border: 0;
+	}
+
+	.prog-section img {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.prog-description {
+		padding: 4rem 0 0 1rem;
+	}
+
+	.prog-description h2 {
+		font-size: 3rem;
+	}
+
+	.prog-description .description {
+		font-size: 2rem;
+		padding: 1rem 0;
+		line-height: 3rem;
+	}
+
+	.prog-description a {
+		font-size: 2rem;
+	}
+
+	.prog-section:last-child {
+		padding-bottom: 2rem;
+	}
+
+
+}
+
 /*Courses Section*/
+
+.main-container-mob {
+	display: none;
+}
 
 .main-container {
 	font-family: "Lato", sans-serif;
@@ -357,6 +436,48 @@ nav {
 		margin: 0 1px;
 	}
 
+}
+
+@media only screen and (max-width: 980px) {
+	.main-container {
+		display: none;
+	}
+
+	.main-container-mob {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 2rem;
+		border: 2px solid #D4D4D4;
+	}
+
+	.main-container-mob h1 {
+		color: #3F3F3F;
+		font-size: 3.5rem;
+		font-weight: 900;
+		margin: 2rem 0;
+
+	}
+
+	.courses-container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button-mob {
+		width: 100%;
+		color: #3F3F3F;
+	}
+
+	.button-mob h2 {
+		margin-bottom: 0.5rem;
+		padding: 2rem 2rem;
+		font-size: 3rem;
+		background-color: #D4D4D4; 
+	}
 }
 
 /*Thesis Section*/
@@ -443,6 +564,26 @@ nav {
 	font-weight: 400;
 }
 
+@media only screen and (max-width: 980px) {
+	.thesis-container {
+		border: 0;
+	}
+
+	.thesis-list {
+		display: none;
+	}
+
+	.video-banner {
+		max-width: 100%;
+		padding: 0 0 1.5rem 0;
+	}
+
+	.video-banner h2,
+	.video-banner p  {
+		display: none;
+	}
+}
+
 /*Footer Section*/
 
 footer {
@@ -464,6 +605,17 @@ footer p {
 
 .footer-nav span {
 	margin: 0 0.5rem;
+}
+
+@media only screen and (max-width: 980px) {
+	.footer-nav {
+		display: none;
+	}
+
+	footer p {
+		font-size: 2rem;
+		padding: 1rem 0;
+	}
 }
 
 
